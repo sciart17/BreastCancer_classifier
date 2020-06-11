@@ -9,11 +9,11 @@ Environment
 python 3.6
 tensorflow-gpu 2.0
 
-Training
+Train
 --------------
 generate a new .h5 file
 
 Test
-----------
-
+--------------
+test model
 
