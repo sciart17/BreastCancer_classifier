@@ -1,7 +1,7 @@
 # Breast Cancer classifier 
 
 ## Introduction
-This implement is aimed at achieving a breast cancer classifier. CNNs and transfer learning are used. Dataset is mammography.
+This implement is aimed at generating a breast cancer classifier. CNNs and transfer learning are used. Dataset is mammography.
 
 ## Environment
 - python==3.6.10
