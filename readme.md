@@ -1,11 +1,23 @@
 # Breast Cancer classifier 
 
 ## Introduction
-python pomias_resnet-3cls.py
+This simple implement aimed 
 
 ## Environment
-python 3.6
-tensorflow-gpu 2.0
+python==3.6.10
+cudatoolkit==10.0.130
+cudnn==7.6.0
+tensorflow-gpu==2.0.0
+keras==2.3.1
+numpy==1.16.6
+opencv
+matplotlib
+scikit-learn
+pandas
+pillow
+h5py
+tqdm
+pycm
 
 ## Data preparation
 You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
