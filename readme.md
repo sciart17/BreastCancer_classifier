@@ -14,9 +14,9 @@ You need to convert mammography into .png format and split dataset into train, v
 
 MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
 
-DDSM: .LJPEG --> .png<br>Refer to (https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+DDSM: .LJPEG --> .png<br>Refer to [this blog](https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
 
-CBIS-DDSM: .dcm-->.png
+CBIS-DDSM: .dcm-->.png<br> run this bash file.
 ````bash
 #!/bin/bash
 # This script is used to find .dcm files and convert them into 16-bit .png files
