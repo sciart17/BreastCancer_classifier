@@ -4,8 +4,8 @@
 This simple implement aimed 
 
 ## Environment
--python==3.6.10
--cudatoolkit==10.0.130
+- python==3.6.10
+- cudatoolkit==10.0.130
 cudnn==7.6.0
 tensorflow-gpu==2.0.0
 keras==2.3.1
