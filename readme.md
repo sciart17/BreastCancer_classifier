@@ -12,7 +12,7 @@ You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/
 
 You need to convert mammography into .png format and split dataset into train, val and test set.
 
-MIAS: .pmg --> .png|Read images using PIL and save them as .png format directly.
+MIAS: .pmg --> .pngdivRead images using PIL and save them as .png format directly.
 
 DDSM: .LJPEG --> .png		Refer to (https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
 
