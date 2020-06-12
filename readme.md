@@ -26,7 +26,7 @@ You need to convert mammography into .png format and split dataset into train, v
 
 - MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
 
-- DDSM: .LJPEG --> .png<br>Refer to [this blog](https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+- DDSM: .LJPEG --> .png<br>Refer to [this repository](https://github.com/Watanuki-Kimihiro/DDSM-LJPEG-Converter)
 
 - CBIS-DDSM: .dcm-->.png<br> run this bash file.
 ````bash
@@ -75,4 +75,4 @@ python test.py --input_model 'trained-model-name' --save_name 'target-save-name'
 
 ## Results
 ![confusion matrix](images/matrix_DenseNet121_nor.png)
-![ROC curve](images/ROCDenseNet121.png)
+![ROC curve](images/ROCDenseNet121.svg)
