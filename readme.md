@@ -70,7 +70,7 @@ or python train_dpn.py
 
 Evaluate trained model on test set. ROC curve, confusion matrix and some indexes in classification can be achieved.
 ````bash
-python test.py --input_model '_trained-model-name_' --save_name '_target-save-name_'
+python test.py --input_model 'your-trained-model-name' --save_name 'your-target-save-name'
 ````
 
 ## Results
