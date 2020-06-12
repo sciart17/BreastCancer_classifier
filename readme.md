@@ -75,4 +75,4 @@ python test.py --input_model 'trained-model-name' --save_name 'target-save-name'
 
 ## Results
 ![confusion matrix](images/matrix_DenseNet121_nor.png)
-![ROC curve](images/ROCDenseNet121.svg)
+![ROC curve](images/ROCDenseNet121.png)
