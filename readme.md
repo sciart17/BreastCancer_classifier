@@ -1,6 +1,6 @@
 # Breast Cancer classifier 
 
-## Usage
+## Introduction
 python pomias_resnet-3cls.py
 
 ## Environment
@@ -49,11 +49,17 @@ $CODE_ROOT
 │   └── malignant
 │  
 ````
-Train
+Train and test
 --------------
-generate a new .h5 file
+Train cnn models on train set. A new .h5 file will be generated after completion of training.
+````bash
+python train_densenet.py
+or python train_dpn.py
+````
 
-Test
---------------
-test model
+Evaluate trained model on test set.
+````bash
+python test.py --input_model 'trained-model-name' --save_name 'target-save-name'
+````
+
 
