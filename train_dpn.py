@@ -27,6 +27,7 @@ from  dual_path_network import DPN92, DPN98, DPN107, DPN137
 from gen_csv import  load_train, load_test, load_val
 
 
+# -----------preprocess data---------------
 def preprocess(x,y):
     x = tf.io.read_file(x)
     x = tf.image.decode_png(x, channels=1)  # RGBA
@@ -66,6 +67,8 @@ print('testtable:', table3)
 db_test = tf.data.Dataset.from_tensor_slices((images3, labels3))
 db_test = db_test.shuffle(500).map(preprocess).batch(batchsz)
 
+
+# -----------train model---------------
 net = DPN92(input_shape=(224, 224, 3), weights='imagenet', include_top=False, pooling='avg')
 newnet = keras.Sequential([
     net,  
@@ -110,6 +113,7 @@ newnet.compile(optimizer=optimizers.Adam(lr=1e-5),
 history1 = newnet.fit(db_train,validation_data=db_val, validation_freq=1, verbose=2, epochs=30,
              callbacks=[learn_control, early_stopping])
 
+# -----------save model and loss/accuracy curves---------------
 save_name = 'ddsm_dpn_3cls'
 
 toc = time.time()
@@ -123,8 +127,9 @@ print('accuracy', history['accuracy'], history1['accuracy'])
 print('val_loss', history['val_loss'], history1['val_loss'])
 print('loss', history['loss'], history1['loss'])
 
-test_loss, test_acc = newnet.evaluate(db_test)
-print(test_loss, test_acc)
+# test_loss, test_acc = newnet.evaluate(db_test)
+# print(test_loss, test_acc)
+
 newnet.save(save_name+'.h5')
 
 plt.figure()

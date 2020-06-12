@@ -27,7 +27,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 from gen_csv import  load_train, load_test, load_val
 
 
-
+# -----------preprocess data---------------
 def preprocess(x,y):
     x = tf.io.read_file(x)
     x = tf.image.decode_png(x, channels=1)  # RGBA
@@ -80,7 +80,7 @@ db_test = db_test.shuffle(500).map(preprocess).batch(batchsz)
 # newnet.build(input_shape=(None, 224, 224, 3))
 # newnet.summary()
 
-
+# -----------train model---------------
 # transfer learning
 # Other trained networks such as InceptionResNetV2, InceptionV3, and ResNet50 can also be used.
 net = keras.applications.DenseNet121(weights='imagenet', include_top=False, pooling='avg')
@@ -129,6 +129,7 @@ newnet.compile(optimizer=optimizers.Adam(lr=1e-5),
 history1 = newnet.fit(db_train,validation_data=db_val, validation_freq=1, verbose=2, epochs=25,
              callbacks=[learn_control, early_stopping])
 
+# -----------save model and loss/accuracy curves---------------
 save_name = 'ddsm_densenet0530_3cls'
 
 toc = time.time()
@@ -142,8 +143,9 @@ print('accuracy', history['accuracy'], history1['accuracy'])
 print('val_loss', history['val_loss'], history1['val_loss'])
 print('loss', history['loss'], history1['loss'])
 
-test_loss, test_acc = newnet.evaluate(db_test)
-print(test_loss, test_acc)
+# test_loss, test_acc = newnet.evaluate(db_test)
+# print(test_loss, test_acc)
+
 newnet.save(save_name+'.h5')
 
 plt.figure()
