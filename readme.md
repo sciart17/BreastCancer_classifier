@@ -8,6 +8,8 @@ python 3.6
 tensorflow-gpu 2.0
 
 ## Data preparation
+Commonly used public mammography datasets include [MIAS](http://peipa.essex.ac.uk/pix/mias/),[DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).
+
 You need to convert mammography into .png format
 
 Your directory tree should be like this:
