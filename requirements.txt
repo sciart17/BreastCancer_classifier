@@ -1,0 +1,13 @@
+python==3.6.10
+cudatoolkit==10.0.130
+cudnn==7.6.0
+tensorflow-gpu==2.0.0
+keras==2.3.1
+numpy==1.16.6
+opencv
+matplotlib
+scikit-learn
+pandas
+pillow
+h5py
+tqdm
