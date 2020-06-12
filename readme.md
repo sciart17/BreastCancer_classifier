@@ -6,29 +6,29 @@ This simple implement aimed
 ## Environment
 - python==3.6.10
 - cudatoolkit==10.0.130
-cudnn==7.6.0
-tensorflow-gpu==2.0.0
-keras==2.3.1
-numpy==1.16.6
-opencv
-matplotlib
-scikit-learn
-pandas
-pillow
-h5py
-tqdm
-pycm
+- cudnn==7.6.0
+- tensorflow-gpu==2.0.0
+- keras==2.3.1
+- numpy==1.16.6
+- opencv
+- matplotlib
+- scikit-learn
+- pandas
+- pillow
+- h5py
+- tqdm
+- pycm
 
 ## Data preparation
-You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
+- You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
 
-You need to convert mammography into .png format and split dataset into train, val and test set.
+- You need to convert mammography into .png format and split dataset into train, val and test set.
 
-MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
+- MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
 
-DDSM: .LJPEG --> .png<br>Refer to [this blog](https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
+- DDSM: .LJPEG --> .png<br>Refer to [this blog](https://blog.csdn.net/liuxinghan1998/article/details/91493334?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
 
-CBIS-DDSM: .dcm-->.png<br> run this bash file.
+- CBIS-DDSM: .dcm-->.png<br> run this bash file.
 ````bash
 #!/bin/bash
 # This script is used to find .dcm files and convert them into 16-bit .png files
