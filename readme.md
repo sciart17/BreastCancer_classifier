@@ -61,8 +61,7 @@ $CODE_ROOT
 │   └── malignant
 │  
 ````
-Train and test
---------------
+## Train and test
 Train cnn models on train set. A new .h5 file will be generated after completion of training.
 ````bash
 python train_densenet.py
@@ -74,4 +73,6 @@ Evaluate trained model on test set. ROC curve, confusion matrix and some indexes
 python test.py --input_model 'trained-model-name' --save_name 'target-save-name'
 ````
 
-
+## Results
+![confusion matrix](images/matrix_DenseNet121_nor.png)
+![ROC curve](images/ROCDenseNet121.png)
