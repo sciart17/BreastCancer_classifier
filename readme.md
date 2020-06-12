@@ -57,7 +57,7 @@ python train_densenet.py
 or python train_dpn.py
 ````
 
-Evaluate trained model on test set.
+Evaluate trained model on test set. ROC curve, confusion matrix and some indexes in classification can be achieved.
 ````bash
 python test.py --input_model 'trained-model-name' --save_name 'target-save-name'
 ````
