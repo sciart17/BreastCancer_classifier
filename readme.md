@@ -1,7 +1,7 @@
 # Breast Cancer classifier 
 
 ## Introduction
-This simple implement aimed 
+This implement is aimed at achieving a breast cancer classifier. CNNs and transfer learning are used. Dataset is mammography.
 
 ## Environment
 - python==3.6.10
@@ -20,9 +20,9 @@ This simple implement aimed
 - pycm
 
 ## Data preparation
-- You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
+You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
 
-- You need to convert mammography into .png format and split dataset into train, val and test set.
+You need to convert mammography into .png format and split dataset into train, val and test set.
 
 - MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
 
