@@ -22,9 +22,9 @@ This implement is aimed at generating a breast cancer classifier. CNNs and trans
 ## Data preparation
 You can use public mammography datasets such as [MIAS](http://peipa.essex.ac.uk/pix/mias/), [DDSM](http://www.eng.usf.edu/cvprg/Mammography/Database.html) and [CBIS-DDSM](https://wiki.cancerimagingarchive.net/display/Public/CBIS-DDSM).  <br>(The CBIS-DDSM dataset is an updated and standardized version of the DDSM dataset.)
 
-You need to convert mammography into .png format and split dataset into train, val and test set.
+You need to convert mammography into 8-bit .png format and split dataset into train, val and test set.
 
-- MIAS: .pmg --> .png<br>Read images using PIL and save them as 8-bit .png format directly.
+- MIAS: .pmg --> .png<br>Read images using PIL and save them as .png format directly.
 
 - DDSM: .LJPEG --> .png<br>Refer to [this repository](https://github.com/Watanuki-Kimihiro/DDSM-LJPEG-Converter)
 
